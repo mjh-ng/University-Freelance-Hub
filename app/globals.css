@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+/* Base theme variables (light mode) */
+:root {
+  --background: #fff5de;       /* apricot */
+  --foreground: #273035;       /* cadet (text) */
+  --primary: #f1b497;          /* light apricot */
+  --accent: #98b7bf;           /* cadet light */
+  --toggle-bg: #fff5de;
+  --toggle-fg: #273035;
+}
+
+/* Dark mode overrides */
+.dark {
+  --background: #273035;       /* cadet dark */
+  --foreground: #fff5de;       /* apricot text */
+  --primary: #98b7bf;          /* cadet accent */
+  --accent: #f1b497;           /* apricot accent */
+  --toggle-bg: #273035;
+  --toggle-fg: #fff5de;
+}
+
+/* Apply theme */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}

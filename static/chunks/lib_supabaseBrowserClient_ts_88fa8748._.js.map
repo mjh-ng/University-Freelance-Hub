@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///Users/markhong/creative-project-520521/lib/supabaseBrowserClient.ts"],"sourcesContent":["'use client'\n\nimport { createClient } from '@supabase/supabase-js'\n\nconst supabase = createClient(\n  process.env.NEXT_PUBLIC_SUPABASE_URL!,\n  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,\n  {\n    auth: {\n      persistSession: true,\n      storage: typeof window !== 'undefined' ? localStorage : undefined,\n    },\n  }\n)\n\nexport default supabase\n"],"names":[],"mappings":";;;AAKE;AAHF;AAFA;;AAIA,MAAM,WAAW,CAAA,GAAA,0LAAA,CAAA,eAAY,AAAD,sUAG1B;IACE,MAAM;QACJ,gBAAgB;QAChB,SAAS,uCAAgC;IAC3C;AACF;uCAGa","debugId":null}}]
+}
